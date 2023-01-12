@@ -97,7 +97,7 @@ mall['Annual Income (k$)'][mall['Annual Income (k$)']<=Q1]=Q1
 mall['Annual Income (k$)'][mall['Annual Income (k$)']>=Q3]=Q3
 print(mall.describe())
 
-#Outlier Analysis 2
+# Outlier Analysis 2
 f, axes = plt.subplots(1,3, figsize=(15,5))
 s=sns.violinplot(y=mall.Age,ax=axes[0])
 axes[0].set_title('Age')
